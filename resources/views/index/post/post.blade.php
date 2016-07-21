@@ -15,6 +15,7 @@
                                 <h1 class="post-title"><a href="#">{{$post->title}}</a></h1>
                                 <div class="post-meta">
                                     <span class="author">来源：{{$post->source}}</span> •
+                                    <span class="author">点击量：{{$post->views}}</span> •
                                     <time class="post-date" datetime="" title="">{{$post->created_at}}</time>
                                 </div>
                             </div>
@@ -37,8 +38,6 @@
                                 </div>
                             </footer>
                         </article>
-
-
                 </main>
             @endsection
 

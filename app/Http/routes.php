@@ -126,6 +126,15 @@ Route::group(['namespace' => 'Admin','prefix' => 'admin','middleware' => 'admin.
 //    return view('index.database');
 //});
 Route::group(['prefix' => 'database'], function () {
+    Route::get('database-menu', function ()    {
+        return view('index.database.database-menu');
+    });
+    Route::get('coach-zhongguonanzu-1', function ()    {
+        return view('index.database.coach-zhongguonanzu-1');
+    });
+    Route::get('coach-ADO', function ()    {
+        return view('index.database.coach-ADO');
+    });
     Route::get('coach-zhongguonanzu-2', function ()    {
         return view('index.database.coach-zhongguonanzu-2');
     });
